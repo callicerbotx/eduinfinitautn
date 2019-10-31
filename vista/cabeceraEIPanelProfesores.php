@@ -60,4 +60,7 @@
     </div>
   </div>
 </nav>
+<div class=" col-lg-12 text-center">
+    <h3> <a href="#" class="text-uppercase text-warning"> <?php echo $_SESSION['username']; ?>,</a> Bienvenido al Sistema de Eduaci&oacute;n Infinita </h3>
+ </div>
 
