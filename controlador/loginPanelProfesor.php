@@ -13,7 +13,7 @@ mysqli_select_db($con,'u893848924_eduinfinita');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$q = " select * from mst_user where username = '$username' AND password = '$password'  ";
+$q = " select * from mst_user where username = '$username' AND pass = '$password'  ";
 
 $result = mysqli_query($con,$q);
 
