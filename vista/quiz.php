@@ -47,3 +47,18 @@ function checkAnswer(){
 }
 window.addEventListener("load", renderQuestion, false);
 </script>
+
+<div class="container">
+
+<p> Transporte Aereo?</p>
+
+<input type="radio" name="transporte" value="1">Coche
+
+<br>
+
+<input type="radio" name="transporte" value="2">Avión
+
+<br>
+
+<input type="radio" name="transporte" value="3">Tren
+</div>
