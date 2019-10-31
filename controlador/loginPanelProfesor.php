@@ -2,34 +2,33 @@
 
 //Conectar a la base de datos
 
-include 'conexion.php';
+session_start();
 
 
 
-$usuario=$_POST['username'];
+$con = mysqli_connect('localhost','u893848924_root','scorpion963.');
 
-$password=$_POST['password'];
+mysqli_select_db($con,'u893848924_eduinfinita');
 
-    
-    $mysqli = new  mysqli("SELECT * FROM `estudiantes` WHERE usuarioAsignado = 'mepvsd19v' AND password='$password' ");
-      
-        
-if($mysqli){
-    
 
-    echo '<br>';
-     header("Location:../panelEvaluacion.php");
-            
-    
-    
+$username = $_POST['username'];
+$password = $_POST['password'];
+$q = " select * from mst_user where username = '$username' AND password = '$password'  ";
+
+$result = mysqli_query($con,$q);
+
+$row = mysqli_num_rows($result);
+
+if($row == 1){
+$_SESSION['username'] = $username;
+
+$userquery = " insert into user(username) values ('$username')";
+$userresult = mysqli_query($con,$userquery) ;
+
+header('location:../panelEvaluacion.php');	
+}else{
+header('location:../index.php');
 }
 
-    else{
-        
-        echo "Datos no validos";
-       
-    }
-mysqli_close($servidor); //cierra conexion
- 
 
 ?>
