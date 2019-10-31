@@ -1,3 +1,21 @@
+<?php
+   session_start();
+   
+   if(!isset($_SESSION['username'])){
+   	header('location:index.php');
+   }
+   
+ 
+    //$con = mysqli_connect('localhost','root','');
+  
+     //mysqli_select_db($con,'quiz_new');
+     
+     $con = mysqli_connect('localhost','u893848924_root','scorpion963.');
+     mysqli_select_db($con,'u893848924_eduinfinita');
+
+
+   
+   ?>
 <!doctype html>
 <html>
 <head>
