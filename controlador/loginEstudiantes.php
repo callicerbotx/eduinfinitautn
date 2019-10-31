@@ -6,12 +6,10 @@
     session_start();
 
 
-$con = mysqli_connect('localhost','root');
-	if($con){
-		echo"connection";
-	}
 
-	mysqli_select_db($con,'quiz_new');
+    $con = mysqli_connect('localhost','u893848924_root ',']3brV4Ct');
+  
+    mysqli_select_db($con,'u893848924_eduinfinita');
 
 
 	$username = $_POST['username'];

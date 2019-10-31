@@ -6,9 +6,9 @@
    }
    
    
-   $con = mysqli_connect('localhost','root');
+   $con = mysqli_connect('localhost','u893848924_root ',']3brV4Ct');
   
-   	mysqli_select_db($con,'quiz_new');
+   	mysqli_select_db($con,'u893848924_eduinfinita');
    
    ?>
 <!doctype html>
