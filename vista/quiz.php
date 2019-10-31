@@ -65,11 +65,8 @@ window.addEventListener("load", renderQuestion, false);
 					<div class="footer text-center">
                 <button type="submit"  class="btn btn-primary btn-link btn-wd btn-lg"  > Enviar Respuesta </button>
 
-				</form>
+				
                 </div>
+				</form>
 					</div>
- <div class="social-line">
-                    
-                  </div>
-<div class="container">
-
+    
