@@ -1,3 +1,16 @@
+<?php
+   session_start();
+   
+   if(!isset($_SESSION['username'])){
+   	header('location:index.php');
+   }
+   
+   
+   $con = mysqli_connect('localhost','root');
+  
+   	mysqli_select_db($con,'quiz_new');
+   
+   ?>
 <!doctype html>
 <html>
 <head>
@@ -34,9 +47,12 @@
       <a class="nav-item nav-link" href="#seccionEvaluacion">Realizar Evaluaci&oacute;n</a>
      
       <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">sistema Educaci&oacute;n Infinita</a>
-      <a class="nav-item nav-link" href="./index.php">Cerrar Sesi&oacute;n</a>
+      <a class="nav-item nav-link" href="controlador/logout.php">Cerrar Sesi&oacute;n</a>
     
     </div>
   </div>
 </nav>
 
+<div class=" col-lg-12 text-center">
+    <h3> <a href="#" class="text-uppercase text-warning"> <?php echo $_SESSION['username']; ?>,</a> Bienvenido al Sistema de Eduaci&oacute;n Infinita </h3>
+ </div>
