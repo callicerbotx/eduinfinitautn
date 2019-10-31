@@ -7,7 +7,7 @@
 
 
 
-    $con = mysqli_connect('localhost','u893848924_root ',']3brV4Ct');
+    $con = mysqli_connect('127.0.0.1:3306','u893848924_root ',']3brV4Ct');
   
     mysqli_select_db($con,'u893848924_eduinfinita');
 
