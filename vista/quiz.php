@@ -47,18 +47,29 @@ function checkAnswer(){
 }
 window.addEventListener("load", renderQuestion, false);
 </script>
+ <div class="card-header card-header-primary text-center">
+ 			<form action="" method="">
+                  <h4 class="card-title">Examen de Prueba</h4>
+                  <p>1. Transporte Aereo?</p>
 
+					<input type="radio" name="transporte" value="1">Coche
+
+					<br>
+
+					<input type="radio" name="transporte" value="2">Avión
+
+					<br>
+
+					<input type="radio" name="transporte" value="3">Tren
+
+					<div class="footer text-center">
+                <button type="submit"  class="btn btn-primary btn-link btn-wd btn-lg"  > Enviar Respuesta </button>
+
+				</form>
+                </div>
+					</div>
+ <div class="social-line">
+                    
+                  </div>
 <div class="container">
 
-<p> Transporte Aereo?</p>
-
-<input type="radio" name="transporte" value="1">Coche
-
-<br>
-
-<input type="radio" name="transporte" value="2">Avión
-
-<br>
-
-<input type="radio" name="transporte" value="3">Tren
-</div>
