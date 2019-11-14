@@ -12,7 +12,8 @@ with(document.login){
 			alert("Debe escribir su password");
 			password.focus();
 		}
-		if(ok){ submit(); }
+
+		
 	}
 }
 
