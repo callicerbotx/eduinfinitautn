@@ -62,7 +62,7 @@
  <div class="row">
           <div class="col-lg-4 col-md-6 ml-auto mr-auto">
             <div class="card card-login">
-              <form class="form" method="POST" action="controlador/loginPanelProfesor.php">
+              <form class="form" name="login" method="POST" action="controlador/loginPanelProfesor.php">
                 <div class="card-header card-header-primary text-center">
                   <h4 class="card-title">Iniciar Sesion Profesor</h4>
                   <div class="social-line">
